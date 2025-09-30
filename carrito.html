@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdrixStore | Carrito</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">AdrixStore</a>
+            <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+            <nav class="site-nav" aria-label="Principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicio.html">Servicio</a></li>
+                    <li><a href="quienes-somos.html">Quienes Somos</a></li>
+                    <li><a class="active" href="carrito.html">Carrito <span class="cart-badge" data-cart-count>0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Tu carrito</h1>
+            <p>Revisa tus artículos, modifica cantidades o elimina productos.</p>
+        </section>
+
+        <section class="card" id="cart-section">
+            <div id="cart-empty" style="display:none;">Tu carrito está vacío.</div>
+            <div id="cart-list"></div>
+            <div id="cart-summary" style="display:none; margin-top:1rem; display:flex; justify-content:space-between; align-items:center;">
+                <strong>Total: <span id="cart-total"></span></strong>
+                <button class="btn primary" id="checkout-btn" type="button">Finalizar compra</button>
+            </div>
+            <p id="cart-status" role="status" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> AdrixStore. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdrixStore | Ingresar</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">AdrixStore</a>
+            <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+            <nav class="site-nav" aria-label="Principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicio.html">Servicio</a></li>
+                    <li><a href="quienes-somos.html">Quienes Somos</a></li>
+                    <li><a class="active" href="login.html">Ingresar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Ingresar</h1>
+            <p>Usa las credenciales: usuario <strong>admin</strong>, contraseña <strong>admin</strong>.</p>
+        </section>
+
+        <section class="card form" style="max-width:480px; margin: 0 auto;">
+            <form id="login-form">
+                <div class="field">
+                    <label for="login-username">Usuario</label>
+                    <input id="login-username" name="username" type="text" autocomplete="username" required>
+                    <small class="error" data-for="login-username"></small>
+                </div>
+                <div class="field">
+                    <label for="login-password">Contraseña</label>
+                    <input id="login-password" name="password" type="password" autocomplete="current-password" required>
+                    <small class="error" data-for="login-password"></small>
+                </div>
+                <button class="btn primary" type="submit">Entrar</button>
+                <p id="login-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> AdrixStore. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

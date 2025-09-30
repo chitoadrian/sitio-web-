@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdrixStore | Servicio</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">AdrixStore</a>
+            <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+            <nav class="site-nav" aria-label="Principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a class="active" href="servicio.html">Servicio</a></li>
+                    <li><a href="quienes-somos.html">Quienes Somos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Servicios</h1>
+            <p>Instalación, mantenimiento y asesoría para que tu equipo rinda al máximo.</p>
+        </section>
+
+        <section class="card" style="margin-bottom: 1rem;">
+            <div class="toolbar" style="display:flex; gap:.75rem; flex-wrap: wrap; align-items: center;">
+                <input id="service-search" type="search" placeholder="Buscar servicios o productos..." style="flex:1 1 260px;">
+                <select id="service-sort" style="flex:0 0 200px;">
+                    <option value="relevancia">Ordenar: Relevancia</option>
+                    <option value="precio-asc">Precio: menor a mayor</option>
+                    <option value="precio-desc">Precio: mayor a menor</option>
+                    <option value="nombre">Nombre</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="grid services-grid" id="services-list">
+            <!-- Render dinámico -->
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> AdrixStore. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
